@@ -1,0 +1,180 @@
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    font-size: 1.4rem;
+}
+
+:root{
+    font-size: 62.5%;
+    --border: .1rem solid rgba(0, 0, 0, 15);
+    --border-radius: 1.2rem;
+}
+
+/* Fontes */
+@font-face{
+    font-family: Roboto;
+    src: url(fonts/Roboto-Black.ttf);
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+aside h1{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+#logo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.logo{
+    height: 35rem;
+}
+
+.span{
+    color:#FF5678;
+}
+
+main{
+    width: 60rem;
+    height: 52rem;
+    border: var(--border);
+    padding: 4.4rem 5.7rem;
+    border-radius: var(--border-radius);
+    background-color: white;
+}
+
+main h2{
+    max-width: 43rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+/* Ancoras Cadastrar e Ver entidades */
+.actions{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.action1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5.4rem;
+    background-color: #35E6E9;
+    height: 5.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2.4rem;
+    border-radius: var(--border-radius);
+}
+
+.action2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4.8rem;
+    background-color: #FF5678;
+    height: 5.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2.4rem;
+    border-radius: var(--border-radius);
+}
+
+#footer p{
+    font-size: 1.6rem;
+    margin-top: 8rem;
+}
+
+#footer a{
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #000;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        ". logo . form ."
+        ". logo . form ."
+        ". . . . ."
+        ;
+        gap: 8.5rem;
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#form{
+    grid-area: form;
+}
+
+/* Cadastro - Entidade styles*/
+
+/* formulario */
+
+#formulario input, #formulario select{
+    display: block;
+    width: 40.89rem;
+    height: 5.5rem;
+
+    background: #ffffff;
+    border: var(--border); 
+    border-radius: var(--border-radius);
+}
+
+.select{
+    appearance: none;
+    text-align: center;
+}
+
+.pontos{
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+.add{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #35E6E9;
+    cursor: pointer;
+}
+
+#formulario label{
+    display: block;
+    margin-bottom: .2rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+/* Header */
+
+#header{
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+}
+
+#header i{
+    font-size: 3rem;
+    color: #FF5678;
+}
